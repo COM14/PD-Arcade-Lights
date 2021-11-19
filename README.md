@@ -1,8 +1,8 @@
 # PD-Arcade-Lights
 Plugin for [PD Loader](https://github.com/PDModdingCommunity/PD-Loader) that sends button and side leds status to arduino.
 ## License
-  Copyright (c) Project DIVA Modding 2nd Community
-  Copyright (c) COM14
+  Copyright (c) Project DIVA Modding 2nd Community  
+  Copyright (c) COM14  
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
