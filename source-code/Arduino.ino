@@ -6,11 +6,11 @@
 #define led3 4  // BUTTON LED CROSS
 #define led4 5  // BUTTON LED CIRCLE
 
-#define led_R1 6  // LEFT PARTITION LED PED
+#define led_R1 6  // LEFT PARTITION LED RED
 #define led_G1 7  // LEFT PARTITION LED GREEN
 #define led_B1 8  // LEFT PARTITION LED BLUE
 
-#define led_R2 9  // RIGHT PARTITION LED PED
+#define led_R2 9  // RIGHT PARTITION LED RED
 #define led_G2 10 // RIGHT PARTITION LED GREEN
 #define led_B2 11 // RIGHT PARTITION LED BLUE
 
