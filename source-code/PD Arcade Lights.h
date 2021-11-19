@@ -1,5 +1,4 @@
 #include "pch.h"
-#include <iostream>
 #include <Windows.h>
 #include "PluginConfigApi.h"
 #include "framework.h"
@@ -24,7 +23,7 @@ void onAttach()
 {
 
     int sides, buttons, ob, os;
-    SerialPort port("COM"+ Selected_Port, Rate);
+    SerialPort port("COM8", Rate);
     HWND hwnd = FindWindowA(NULL, "Hatsune Miku Project DIVA Arcade Future Tone");
     for (; hwnd == NULL; hwnd = FindWindowA(NULL, "Hatsune Miku Project DIVA Arcade Future Tone") ) {Sleep(6000);}
 
@@ -66,7 +65,7 @@ BOOL APIENTRY DllMain(HMODULE hModule,DWORD  ul_reason_for_call,LPVOID lpReserve
 
 PluginConfig::PluginConfigOption config[] = {
     { PluginConfig::CONFIG_GROUP_START, new PluginConfig::PluginConfigGroupData{ L"Settings", 110 } },
-    { PluginConfig::CONFIG_NUMERIC, new PluginConfig::PluginConfigNumericData{ L"Selected_Port", L"general", CONFIG_FILE, L"COM Port", L"COM Port (1-256)", 8, 1, 256} },
+    { PluginConfig::CONFIG_NUMERIC, new PluginConfig::PluginConfigNumericData{ L"Selected_Port", L"general", CONFIG_FILE, L"COM Port(not working)", L"set to 8", 8, 1, 256} },
     { PluginConfig::CONFIG_DROPDOWN_NUMBER, new PluginConfig::PluginConfigDropdownNumberData{ L"Rate", L"general", CONFIG_FILE, L"Data rate", L"COM Port data rate", 38400, std::vector<int>({ 9600, 38400, 115200 }), false } },
     { PluginConfig::CONFIG_NUMERIC, new PluginConfig::PluginConfigNumericData{ L"Delay", L"general", CONFIG_FILE, L"Delay(ms)", L"Delay between scans (0-100ms)\n0 is not recommended", 1, 0, 100} },
 };
